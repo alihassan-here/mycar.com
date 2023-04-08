@@ -1,0 +1,47 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "./styles/buttons.css";
+@import "./styles/form.css";
+
+@layer components {
+  .form-control {
+    @apply bg-gray-900 p-3 rounded-sm outline-none w-full;
+  }
+  .alert-danger {
+    @apply bg-rose-100 text-rose-700 p-3 mb-2 rounded-sm text-sm font-medium border-l-4 border-rose-700;
+  }
+  .alert-success {
+    @apply bg-green-100 text-green-700 p-3 mb-2 rounded-sm text-sm font-medium border-l-4 border-green-700;
+  }
+
+  /* Paginatin */
+  .pagination-link {
+    @apply border border-gray-800 text-gray-500 text-sm font-medium block py-2 px-4 bg-gray-900;
+  }
+  .size {
+    @apply border border-gray-400 ml-2 px-3 py-1.5 mt-2 uppercase cursor-pointer rounded text-sm;
+  }
+  .right-heading {
+    @apply capitalize my-2 text-gray-400 text-base;
+  }
+}
+.signup_wrapper .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: white !important;
+  background-color: #5f00e5 !important;
+  border-color: transparent !important;
+  border-radius: 0 !important;
+}
+.signup_wrapper .nav-link {
+  color: white;
+}
+.signup_wrapper .nav-link:hover {
+  color: white;
+  border-color: transparent !important;
+  border-radius: 0 !important;
+}
+a {
+  text-decoration: none !important;
+  color: white !important;
+}
